@@ -32,5 +32,18 @@ A GO string is just a collection of types and can be accessed as a whole or as a
 - the length of []byte might not be the same as the length of the string (unicode)
 - no default function for deleting an element from a slice 
 
+## Pointers
+* Go has support Pointers but not for pointer arithmetic. (cause bugs & errors)
+* Why we use pointers in Go, the main benefit is that passing a variable to a function as a pointer does not discard any changes you make.
+* if a slice won't change it size, we don't need passing pointer (slice is a pointer to underlying array)
+
+### Pros:
+1. share pointer between functions/goroutines, we should be extra careful with race condition issues.
+2. use pointer to tell difference between zero value and value that is not set(nil value) this is useful with structure.
+3. support Linked List & Tree, without pointer, it's hard to implement and may be too slow
+
+## Random Number/String
+
+- You do not need to define a seed when using the `crypto/rand` package
 
 
