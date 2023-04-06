@@ -1,0 +1,8 @@
+goapp:
+  image: go-app
+  container_name: goapp-int
+  restart: always
+  ports:
+    - 1234:1234
+  networks:
+    - monitoring
