@@ -67,14 +67,4 @@ func main() {
 	for _, v := range data {
 		fmt.Println(v)
 	}
-
-	err = dbpost.DeleteUser(id)
-	if err != nil {
-		fmt.Println(err)
-	}
-
-	err = dbpost.DeleteUser(id)
-	if err != nil {
-		fmt.Println(err)
-	}
 }

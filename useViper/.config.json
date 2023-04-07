@@ -1,0 +1,10 @@
+{
+  "macos": "default",
+  "linux": "default",
+  "windows": "default",
+
+  "active": true,
+  "postgres": "default",
+  "mysql": "default",
+  "mongodb": "default"
+}
